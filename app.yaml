@@ -1,0 +1,14 @@
+runtime: nodejs18
+
+# Static files configuration
+handlers:
+- url: /images
+  static_dir: public/images
+
+- url: /css
+  static_dir: public/css
+
+# Routing for Handlebars templates
+- url: /.*
+  script: auto
+

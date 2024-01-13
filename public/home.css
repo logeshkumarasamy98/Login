@@ -1,0 +1,112 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h2{
+    font-family: 'Merriweather', serif;
+    font-size: 25pt;    font-weight: 400;    line-height: 1.6667;    margin-top: 12px;
+  }
+  
+  .topnav {
+    
+    height: 50px; /* Adjust the height of the topnav as needed */
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+  }
+  
+  .logo {
+    margin-left: 10px;
+    margin-right: 10px; /* Reduced right margin for spacing */
+    height: 30px; /* Adjust the height of the logo as needed */
+  }
+  
+  .topnavcont {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  
+  .topnavcont a {
+    color: rgb(248, 246, 243);
+    padding: 10px; /* Reduced padding for spacing */
+    text-decoration: none;
+    font-size: 14px; /* Reduced font size */
+    transition: color 0.3s ease;
+  }
+  
+  .topnavcont a:hover {
+    background-color: #333;
+    color: #fff;
+    
+  }
+  
+  .heading{
+    background-color: #3e3b3b;
+  height: 30vh;
+  color: #fefefe;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+.grid-container {
+    display: grid;
+    margin: 25%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; /* Adjust the gap between grid items */
+    margin-top: 20px;
+  }
+  
+  .grid-item {
+    text-decoration: none;
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #dbcbcb; /* Added border to each grid item */
+    transition: transform 0.3s ease;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  .grid-item:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  .grid_logo {
+    height: 50px; /* Adjust the height of the logos */
+  }
+
+  p{
+    color: #777;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4em;
+  }
+ 
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.heading h2 {
+  opacity: 1;
+  animation: fadeIn 2s ease forwards;
+}
+.grid-container {
+  opacity: 0;
+  animation: fadeIn 3s ease forwards; /* Adjusted the animation duration to 2 seconds */
+}
+
